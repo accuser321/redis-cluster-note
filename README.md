@@ -97,3 +97,7 @@ min-slave2-max-lag 10
 
 
 A中的数据会同步到B,C中，C中的数据会同步到D,E中。
+
+部分内容来源于网络：
+Thanks-http://qifuguang.me/2015/10/18/Redis%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/
+Thanks-http://www.runoob.com/redis/redis-install.html

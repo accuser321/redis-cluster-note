@@ -60,13 +60,13 @@ slaveof 主数据库地址 主数据库端口
 OK
 127.0.0.1:6379>
 现在到从库中检查该值是否已经自动同步到了从库：
-[qifuguang@Mac~]$ /opt/soft/redis-3.0.4/src/redis-cli -p 6380
+[]$ /opt/soft/redis-3.0.4/src/redis-cli -p 6380
 127.0.0.1:6380> get test-sync
 "winwill2012"
 127.0.0.1:6380>
 可以看到，数据确实从主库同步到了从库.
 在默认情况下，从库是只读的，如果在从库中写数据将会报错：
-[qifuguang@Mac~]$ /opt/soft/redis-3.0.4/src/redis-cli -p 6380
+[]$ /opt/soft/redis-3.0.4/src/redis-cli -p 6380
 127.0.0.1:6380> set x y
 (error) READONLY You can't write against a read only slave.
 127.0.0.1:6380>
